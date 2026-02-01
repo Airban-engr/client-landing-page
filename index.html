@@ -1,382 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Executive Assistant | Calm Systems. Clear Results.</title>
-  <meta name="description" content="Executive Assistant supporting busy leaders with calm, proactive operations: inbox, calendar, travel, meetings, documentation, and follow-through." />
+  <title>Boujee on a Budget — Portfolio</title>
+  <meta name="description" content="Boujee on a Budget — an elegant portfolio site." />
 
-  <!-- Open Graph (optional but recommended) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Executive Assistant | Calm Systems. Clear Results." />
-  <meta property="og:description" content="Inbox, calendar, meetings, travel, documentation — handled with precision and discretion." />
-  <meta property="og:image" content="./assets/preview.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <!-- Fonts (close to the look in your screenshots) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Top bar -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__mark">EA</span>
-        <span class="brand__text">
-          <span class="brand__name">Executive Assistant</span>
-          <span class="brand__tag">Discreet • Proactive • Reliable</span>
-        </span>
-      </a>
+  <!-- Background frame -->
+  <div class="page-bg">
+    <div class="frame">
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#plan">My Plan</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="btn btn--sm">Get in touch</a>
-      </nav>
+      <!-- 1) COVER / BRAND CARD -->
+      <section class="card cover" id="top">
+        <div class="cover-grid">
+          <div class="cover-photo" role="img" aria-label="Cover photo"></div>
+
+          <div class="cover-content">
+            <div class="brand">
+              <h1 class="brand-title">BOUJEE</h1>
+              <div class="brand-script">on a budget</div>
+              <div class="brand-rule"></div>
+            </div>
+
+            <div class="swatches" aria-label="Brand colors">
+              <div class="swatch" title="Taupe"></div>
+              <div class="swatch sw2" title="Warm Brown"></div>
+              <div class="swatch sw3" title="Deep Brown"></div>
+              <div class="swatch sw4" title="Olive"></div>
+            </div>
+
+            <a class="btn btn-primary" href="#welcome">Enter Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2) WELCOME / HERO -->
+      <section class="card split" id="welcome">
+        <div class="split-left">
+          <h2 class="display">
+            <span class="display-big">Welcome</span>
+            <span class="display-sub">to my portfolio!</span>
+          </h2>
+
+          <div class="intro">
+            <div class="label">My name is:</div>
+            <div class="name">Boujee on a Budget</div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="split-right">
+          <img class="img-soft" src="images/portrait.jpg" alt="Portrait" />
+        </div>
+      </section>
+
+      <!-- 3) ABOUT -->
+      <section class="card about" id="about">
+        <div class="about-grid">
+          <div class="about-photo">
+            <img class="img-soft" src="images/about.jpg" alt="Lifestyle photo" />
+            <div class="about-title">
+              <div class="display-big">About Me</div>
+              <div class="thin-rule"></div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p class="lead">
+              Hi, I’m <strong>Boujee</strong> — the calm, reliable support behind the scenes,
+              helping busy people stay organized, efficient, and stress-free.
+            </p>
+            <p>
+              I bring a polished, detail-first approach to everything I touch — from admin and
+              customer support to light content assistance and scheduling. I’m proactive, discreet,
+              and obsessed with smooth workflows.
+            </p>
+            <p class="muted">
+              Consider me your dependable right-hand support — focused on making your days lighter
+              and your operations cleaner.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) PLAN: VISION + MISSION -->
+      <section class="card plan" id="plan">
+        <div class="plan-grid">
+          <div class="plan-col">
+            <h3 class="section-title">My Plan</h3>
+            <h4 class="subhead">Vision</h4>
+            <p>
+              To become a trusted long-term support partner for growing brands and professionals —
+              known for consistency, clarity, and making workdays feel effortless.
+            </p>
+          </div>
+
+          <div class="plan-mid">
+            <img class="img-soft" src="images/plan.jpg" alt="Desk photo" />
+          </div>
+
+          <div class="plan-col">
+            <h4 class="subhead">Mission</h4>
+            <p>
+              To provide reliable, efficient, proactive support that reduces stress, protects your time,
+              and keeps the important things moving. I add value through excellent communication,
+              confidentiality, and thoughtful attention to detail.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5) PROJECTS -->
+      <section class="card projects" id="projects">
+        <div class="projects-grid">
+          <div class="projects-left">
+            <h3 class="display-big">The<br/>Projects</h3>
+            <p class="muted">
+              A selection of services and work samples — designed to show how I support,
+              streamline, and elevate daily operations.
+            </p>
+            <div class="thin-rule"></div>
+          </div>
+
+          <div class="projects-right">
+            <div class="grid4">
+              <a class="proj" href="#" aria-label="Project: Email Management">
+                <img src="images/project1.jpg" alt="Email management" />
+                <div class="proj-label">Email Management</div>
+              </a>
+
+              <a class="proj" href="#" aria-label="Project: Travel Management">
+                <img src="images/project2.jpg" alt="Travel management" />
+                <div class="proj-label">Travel Management</div>
+              </a>
+
+              <a class="proj" href="#" aria-label="Project: Research and Data Entry">
+                <img src="images/project3.jpg" alt="Research and data entry" />
+                <div class="proj-label">Research &amp; Data Entry</div>
+              </a>
+
+              <a class="proj" href="#" aria-label="Project: File Organization">
+                <img src="images/project4.jpg" alt="File organization" />
+                <div class="proj-label">File Organization</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6) CERTIFICATIONS -->
+      <section class="card certs" id="certs">
+        <div class="certs-grid">
+          <div class="certs-left">
+            <h3 class="display-big">My<br/>Certifications</h3>
+            <p class="muted">
+              Proof of training and continuous growth — built to deliver high-quality work with confidence.
+            </p>
+          </div>
+
+          <div class="certs-right">
+            <div class="cert-stack">
+              <img src="images/cert1.jpg" alt="Certification 1" />
+              <img src="images/cert2.jpg" alt="Certification 2" />
+              <img src="images/cert3.jpg" alt="Certification 3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7) WHY CHOOSE ME -->
+      <section class="card why" id="why">
+        <div class="why-grid">
+          <div class="why-left">
+            <h3 class="display-big">Why Choose Me:</h3>
+            <ul class="bullet">
+              <li>I pay attention to every detail</li>
+              <li>I work proactively — not reactively</li>
+              <li>I’m versatile and dependable</li>
+              <li>I make collaboration smooth & friendly</li>
+              <li>I communicate clearly and professionally</li>
+            </ul>
+          </div>
+
+          <div class="why-right">
+            <img class="img-soft" src="images/hero.jpg" alt="Clean lifestyle photo" />
+            <div class="thin-rule"></div>
+            <div class="site-mark">boujee-on-a-budget</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8) CONTACT -->
+      <section class="card contact" id="contact">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <h3 class="display">
+              <span class="display-big">Let’s stay</span>
+              <span class="display-big">in touch</span>
+            </h3>
+
+            <div class="contact-list">
+              <div class="row"><span class="k">E-mail:</span> <span class="v">hello@yourmail.com</span></div>
+              <div class="row"><span class="k">Phone:</span> <span class="v">+233 XX XXX XXXX</span></div>
+              <div class="row"><span class="k">LinkedIn:</span> <span class="v">Your LinkedIn Name</span></div>
+            </div>
+
+            <a class="btn btn-primary" href="#top">Back to Top</a>
+          </div>
+
+          <div class="contact-right">
+            <img class="phone" src="images/phone-mock.png" alt="Phone mockup" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> Boujee on a Budget</div>
+      </footer>
+
     </div>
-  </header>
-
-  <!-- Hero -->
-  <main id="top">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow">Welcome</p>
-          <h1>Calm support for busy executives — so you can lead with focus.</h1>
-          <p class="lead">
-            I help leaders stay ahead with reliable systems for inbox, calendar, meetings, travel,
-            documentation, and follow-through. No noise. Just execution.
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn" href="#contact">Request availability</a>
-            <a class="btn btn--ghost" href="#projects">View work samples</a>
-          </div>
-
-          <div class="hero__trust">
-            <div class="trust__item">
-              <div class="trust__kpi">24–48h</div>
-              <div class="trust__label">Typical turnaround</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__kpi">High</div>
-              <div class="trust__label">Discretion & confidentiality</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__kpi">Ops</div>
-              <div class="trust__label">Systems-first workflow</div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero__card">
-          <div class="profile">
-            <!-- Replace with your client’s photo later -->
-            <div class="avatar" aria-hidden="true"></div>
-
-            <div class="profile__meta">
-              <h2 class="profile__name">[Client Name]</h2>
-              <p class="profile__role">Executive Assistant</p>
-              <p class="profile__note">Available: <strong>Immediately</strong> • Remote / Hybrid</p>
-            </div>
-
-            <div class="profile__bullets">
-              <div class="pill">Inbox triage & follow-ups</div>
-              <div class="pill">Calendar mastery</div>
-              <div class="pill">Meeting ops + minutes</div>
-              <div class="pill">Travel logistics</div>
-              <div class="pill">Docs + SOPs</div>
-              <div class="pill">Stakeholder comms</div>
-            </div>
-
-            <a class="btn btn--full" href="#contact">Book a 10-minute intro</a>
-            <p class="micro">Fast response. Clear next steps. No pressure.</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">About Me</p>
-          <h2>Trusted operational support with a calm, executive standard.</h2>
-          <p class="muted">
-            I work quietly in the background to keep everything moving: priorities clarified, messages handled,
-            schedules protected, meetings prepared, and tasks closed.
-          </p>
-        </div>
-
-        <div class="grid3">
-          <div class="card">
-            <h3>Discretion</h3>
-            <p>Confidential work handled with care. Sensitive information stays protected.</p>
-          </div>
-          <div class="card">
-            <h3>Proactivity</h3>
-            <p>I anticipate needs, flag risks early, and prevent fires before they start.</p>
-          </div>
-          <div class="card">
-            <h3>Execution</h3>
-            <p>Clear next steps, clean documentation, consistent follow-through — every time.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Plan -->
-    <section id="plan" class="section section--tint">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">My Plan</p>
-          <h2>How we get results in the first 7 days.</h2>
-          <p class="muted">A simple onboarding process that immediately reduces chaos and protects your time.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">01</div>
-            <div class="step__body">
-              <h3>Clarify priorities</h3>
-              <p>We define your “must win” outcomes, decision cadence, and what gets protected on the calendar.</p>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="step__num">02</div>
-            <div class="step__body">
-              <h3>Set systems</h3>
-              <p>Inbox rules, calendar categories, meeting templates, and a clean task tracker.</p>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="step__num">03</div>
-            <div class="step__body">
-              <h3>Run the week</h3>
-              <p>Daily check-ins, proactive follow-ups, and a weekly briefing so nothing slips.</p>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="step__num">04</div>
-            <div class="step__body">
-              <h3>Optimize</h3>
-              <p>We review bottlenecks and refine workflows to scale without stress.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Expertise -->
-    <section id="expertise" class="section">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">My Expertise</p>
-          <h2>Executive support that feels like a system, not a person.</h2>
-          <p class="muted">These are the areas where you’ll feel the biggest time-savings immediately.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="card card--pad">
-            <h3>Inbox & Communications</h3>
-            <ul class="list">
-              <li>Inbox triage (priority → action)</li>
-              <li>Draft replies in your voice</li>
-              <li>Follow-up tracking</li>
-              <li>Stakeholder updates & reminders</li>
-            </ul>
-          </div>
-
-          <div class="card card--pad">
-            <h3>Calendar & Scheduling</h3>
-            <ul class="list">
-              <li>Calendar protection + buffers</li>
-              <li>Time-zone safe scheduling</li>
-              <li>Agenda + pre-reads</li>
-              <li>Reschedules handled smoothly</li>
-            </ul>
-          </div>
-
-          <div class="card card--pad">
-            <h3>Meetings & Operations</h3>
-            <ul class="list">
-              <li>Meeting setup + attendees</li>
-              <li>Notes / minutes + action items</li>
-              <li>Decision logs</li>
-              <li>Project coordination</li>
-            </ul>
-          </div>
-
-          <div class="card card--pad">
-            <h3>Travel & Logistics</h3>
-            <ul class="list">
-              <li>Itineraries + confirmations</li>
-              <li>Accommodation & transport</li>
-              <li>Expense-ready organization</li>
-              <li>Contingency planning</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section section--tint">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">My Projects</p>
-          <h2>Recent work (examples)</h2>
-          <p class="muted">Replace these cards with your client’s real examples when ready.</p>
-        </div>
-
-        <div class="grid3">
-          <article class="card card--project">
-            <h3>Inbox reset → weekly clarity</h3>
-            <p>Created triage rules, templates, and follow-up tracking to cut response chaos.</p>
-            <div class="tagrow">
-              <span class="tag">Inbox</span><span class="tag">Templates</span><span class="tag">Follow-ups</span>
-            </div>
-          </article>
-
-          <article class="card card--project">
-            <h3>Calendar protection system</h3>
-            <p>Built scheduling guardrails, buffers, and priority blocks to protect deep work.</p>
-            <div class="tagrow">
-              <span class="tag">Calendar</span><span class="tag">Ops</span><span class="tag">Focus</span>
-            </div>
-          </article>
-
-          <article class="card card--project">
-            <h3>Meeting ops & minutes</h3>
-            <p>Agenda templates, minutes, action tracking, and weekly briefing summaries.</p>
-            <div class="tagrow">
-              <span class="tag">Meetings</span><span class="tag">Minutes</span><span class="tag">Briefings</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications / Tools -->
-    <section class="section">
-      <div class="container">
-        <div class="grid2">
-          <div class="card card--pad">
-            <p class="eyebrow">Certifications</p>
-            <h2>Credentials</h2>
-            <ul class="list">
-              <li>[Certification / Training 1]</li>
-              <li>[Certification / Training 2]</li>
-              <li>[Certification / Training 3]</li>
-            </ul>
-          </div>
-
-          <div class="card card--pad">
-            <p class="eyebrow">Skills & Tools</p>
-            <h2>Daily toolkit</h2>
-            <div class="chips">
-              <span class="chip">Google Workspace</span>
-              <span class="chip">Microsoft Office</span>
-              <span class="chip">Calendar Management</span>
-              <span class="chip">Notion</span>
-              <span class="chip">Trello</span>
-              <span class="chip">Asana</span>
-              <span class="chip">Slack</span>
-              <span class="chip">Zoom</span>
-              <span class="chip">Docs & SOPs</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why choose -->
-    <section class="section section--tint">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Why Choose Me</p>
-          <h2>Because your time is expensive.</h2>
-          <p class="muted">You should spend it on decisions, leadership, and outcomes — not logistics.</p>
-        </div>
-
-        <div class="grid3">
-          <div class="card">
-            <h3>Executive standard</h3>
-            <p>Polished communication, reliable delivery, and calm professionalism.</p>
-          </div>
-          <div class="card">
-            <h3>Systems-first</h3>
-            <p>Templates, trackers, and routines — so the work stays consistent.</p>
-          </div>
-          <div class="card">
-            <h3>Follow-through</h3>
-            <p>No loose ends. Action items tracked to completion.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container contact">
-        <div class="contact__left">
-          <p class="eyebrow">Get in touch</p>
-          <h2>Want your week to feel lighter?</h2>
-          <p class="muted">
-            Send a message with what you need support with. I’ll reply with availability and a simple next step.
-          </p>
-
-          <div class="contact__cards">
-            <div class="mini">
-              <div class="mini__label">Email</div>
-              <div class="mini__value"><a href="mailto:hello@example.com">hello@example.com</a></div>
-            </div>
-            <div class="mini">
-              <div class="mini__label">WhatsApp</div>
-              <div class="mini__value"><a href="https://wa.me/233000000000" target="_blank" rel="noopener">+233 00 000 0000</a></div>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact__form" action="#" method="post">
-          <label>
-            <span>Name</span>
-            <input name="name" type="text" placeholder="Your name" required />
-          </label>
-
-          <label>
-            <span>Email</span>
-            <input name="email" type="email" placeholder="you@company.com" required />
-          </label>
-
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" placeholder="What do you need support with?" required></textarea>
-          </label>
-
-          <button class="btn btn--full" type="submit">Send message</button>
-          <p class="micro">Tip: Replace the form action later with Formspree (if needed).</p>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p>© <span id="y"></span> Executive Assistant • Calm systems. Clear results.</p>
-        <a href="#top">Back to top ↑</a>
-      </div>
-    </footer>
-  </main>
+  </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
